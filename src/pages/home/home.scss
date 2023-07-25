@@ -7,13 +7,13 @@
   gap: 20px;
 
   .box {
-    // width: 150px;
-    // height: 100px;
-    border: 1px solid $soft-bg;
+    border: 2px solid $soft-bg;
     display: flex;
     align-items: center;
-    justify-content: center;
-    background-color: lightblue;
+    // background-color: #eee;
+    // color: #000;
+    border-radius: 8px;
+    height: 150px;
   }
 
   .box5 {

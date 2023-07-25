@@ -1,0 +1,60 @@
+@import "../../styles/variables.scss";
+
+.SocialBox-container {
+  width: 100%;
+
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+    .left {
+      h4 {
+        font-weight: 500;
+      }
+
+      .userHashtagName {
+        color: gray;
+        font-size: 14px;
+      }
+
+      .userPercent {
+        margin-left: 10px;
+        background-color: limegreen;
+        font-size: 14px;
+      }
+    }
+
+    .right {
+      img {
+        width: 30px;
+        height: 30px;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+    h3 {
+      font-weight: 500;
+      padding-bottom: 5px;
+    }
+
+    .left {
+      span {
+        font-size: 14px;
+      }
+    }
+    .right {
+      span {
+        font-size: 14px;
+      }
+    }
+  }
+}

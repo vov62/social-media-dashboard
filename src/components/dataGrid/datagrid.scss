@@ -1,0 +1,65 @@
+@import "../../styles/variables.scss";
+
+.user-social-box {
+  width: 100%;
+
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+    .left {
+      h4 {
+        font-weight: 500;
+        padding-bottom: 2px;
+        text-transform: capitalize;
+      }
+
+      .userHashtagName {
+        color: gray;
+        font-size: 14px;
+      }
+
+      .userPercent {
+        margin-left: 12px;
+        font-size: 14px;
+        color: $soft-bg;
+      }
+    }
+
+    .right {
+      width: 40px;
+      height: 40px;
+      object-fit: cover;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+    h3 {
+      font-weight: 500;
+      padding-bottom: 5px;
+    }
+
+    .left {
+      span {
+        font-size: 14px;
+      }
+    }
+    .right {
+      span {
+        font-size: 14px;
+      }
+    }
+  }
+}
