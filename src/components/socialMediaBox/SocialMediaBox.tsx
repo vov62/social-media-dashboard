@@ -1,4 +1,4 @@
-import "./datagrid.scss";
+import "./SocialMediaBox.scss";
 
 type Props = {
   SocialMedia: string;

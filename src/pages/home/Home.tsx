@@ -1,28 +1,33 @@
 import "./home.scss";
+import { useState } from "react";
 
-import { socialMediaUsers } from "../../dataMock/dataMock";
-import DataGrid from "./../../components/dataGrid/DataGrid";
+import { socialMediaUsers, dailyVisitorsData } from "../../dataMock/dataMock";
+import SocialMediaBox from "../../components/socialMediaBox/SocialMediaBox";
+import ChartsData from "../../components/chartData/ChartsData";
 
 const Home = () => {
+  // const [userData, setUserData] = useState({
+  //   labels: dailyVisitorsData?.map((data) => data.Date),
+  //   dataSets: [
+  //     {
+  //       label: "Users Gained",
+  //       data: dailyVisitorsData?.map((data) => data.Visitors),
+  //     },
+  //   ],
+  // });
+
   return (
     <div className="home">
-      {/* <div className="box box1">
-        <SocialBox />
-      </div>
-      <div className="box box2">Box2</div>
-      <div className="box box3">Box3</div>
-      <div className="box box4">Box4</div>
-      <div className="box box5">Box5</div>
-      <div className="box box6">Box6</div> */}
-      {/* <SocialBox data={socialMediaUsers} /> */}
       {socialMediaUsers?.map((user) => {
         return (
-          <div className="box">
-            <DataGrid key={user.ID} user={user} />
+          <div className="box" key={user.ID}>
+            <SocialMediaBox user={user} />
           </div>
         );
       })}
-      <div className="box box5">Box5</div>
+      <div className="box box5">
+        <ChartsData userData={dailyVisitorsData} />
+      </div>
       <div className="box box6">Box6</div>
     </div>
   );
