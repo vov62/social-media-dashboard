@@ -16,15 +16,26 @@
         text-transform: capitalize;
       }
 
-      .userHashtagName {
-        color: gray;
-        font-size: 14px;
-      }
+      .user-Statics-details {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
 
-      .userPercent {
-        margin-left: 12px;
-        font-size: 14px;
-        color: $soft-bg;
+        .userHashtagName {
+          color: gray;
+          font-size: 14px;
+        }
+
+        .userStatics {
+          border-radius: 4px;
+          padding: 0 3px;
+          span {
+            margin-left: 4px;
+            font-size: 14px;
+            color: $soft-bg;
+          }
+        }
       }
     }
 

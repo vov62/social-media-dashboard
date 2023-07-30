@@ -1,4 +1,6 @@
 import "./SocialMediaBox.scss";
+import upArrow from "/up-arrow.svg";
+import downArrow from "../../../public/down-arrow-.svg";
 
 type Props = {
   SocialMedia: string;
@@ -24,13 +26,25 @@ const DataGrid: React.FC<{ user: Props }> = ({ user }) => {
       <div className="top">
         <div className="left">
           <h4>{SocialMedia}</h4>
-          <span className="userHashtagName">@{Username}</span>
-          <span
-            className="userPercent"
-            style={{ color: Percentage < 0 ? "tomato" : "limegreen" }}
-          >
-            &#8593; {Percentage}
-          </span>
+
+          <div className="user-Statics-details">
+            <span className="userHashtagName">@{Username}</span>
+
+            <div
+              className="userStatics"
+              style={{
+                backgroundColor: Percentage < 0 ? "tomato" : "limegreen",
+              }}
+            >
+              <img
+                src={Percentage < 0 ? "/down-arrow-.svg" : "/up-arrow.svg/"}
+                alt="arrow"
+                width={12}
+                height={12}
+              />
+              <span className="userPercent">{Percentage}</span>
+            </div>
+          </div>
         </div>
 
         <div className="right">

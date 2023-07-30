@@ -4,6 +4,7 @@ import { useState } from "react";
 import { socialMediaUsers, dailyVisitorsData } from "../../dataMock/dataMock";
 import SocialMediaBox from "../../components/socialMediaBox/SocialMediaBox";
 import ChartsData from "../../components/chartData/ChartsData";
+import PaiChartBox from "../../components/PaiChartBox/PaiChartBox";
 
 const Home = () => {
   // const [userData, setUserData] = useState({
@@ -28,7 +29,9 @@ const Home = () => {
       <div className="box box5">
         <ChartsData userData={dailyVisitorsData} />
       </div>
-      <div className="box box6">Box6</div>
+      <div className="box box6">
+        <PaiChartBox />
+      </div>
     </div>
   );
 };
