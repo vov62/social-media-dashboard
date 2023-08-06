@@ -52,12 +52,17 @@ export const dailyVisitorsData = [
   { Date: "10/07", Visitors: 5000 },
 ];
 
-// Data Mock Chart for Monthly Visitors
-export const monthlyVisitorsData = [
-  { Week: "Week 1", Visitors: 12000 },
-  { Week: "Week 2", Visitors: 13500 },
-  { Week: "Week 3", Visitors: 14800 },
-  { Week: "Week 4", Visitors: 16200 },
-  { Week: "Week 5", Visitors: 17500 },
-  // ... Add more data here ...
+// Data Mock Pia Chart for Monthly Visitors
+
+export const MonthlyVisitors = [
+  {
+    gender: "Man",
+    numberOfVisits: 15,
+    color: "#007bff", // Blue color for males
+  },
+  {
+    gender: "Women",
+    numberOfVisits: 12,
+    color: "#ff6b81", // Pink color for females
+  },
 ];

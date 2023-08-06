@@ -1,13 +1,56 @@
 @import "../../styles/variables.scss";
 
 .pai-chart-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
-}
-.pai-chart {
   height: 100%;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .audience-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 12px;
+    height: 100%;
+    width: 100%;
+    h3 {
+      text-transform: capitalize;
+    }
+
+    h4 {
+      color: gray;
+    }
+  }
+
+  .pai-chart {
+    height: 100%;
+    width: 100%;
+  }
+
+  .GenderOptions {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+    font-size: 14px;
+
+    .option {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+
+      .title {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        text-transform: capitalize;
+
+        .dot {
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
 }

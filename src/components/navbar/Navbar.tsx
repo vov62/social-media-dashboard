@@ -1,11 +1,16 @@
+import { useGlobalContext } from "../../context/context.jsx";
+
 import "./navbar.scss";
 
 const Navbar = () => {
+  const { data } = useGlobalContext();
+
   return (
     <div className="navbar">
       <div className="logo">
         <img src="logo.svg" alt="logo" />
         <span>Avi Vov</span>
+        {/* <span>{data?.name}</span> */}
       </div>
       <div className="icons">
         <div className="notification">
